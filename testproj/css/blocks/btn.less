@@ -1,0 +1,36 @@
+//main: ../style.css
+
+.btn {
+    margin-top: 40px;
+
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.06rem;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid @gray;
+    padding: 1rem 1.8rem; 
+    min-width: 170px;
+    text-align: center;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    
+    &:hover {
+        color: @white;
+        background-color: @black;
+    }
+    + .btn {
+        margin-left: 1rem;
+    }
+    &--sm {
+        font-size: .95rem;
+        font-weight: 700;
+        border-width: 2px;
+        padding: 0.5em 1em;
+    }
+}
+
+.presentation__content .btn {
+    margin-left: 200px;
+}

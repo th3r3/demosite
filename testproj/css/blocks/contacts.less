@@ -1,0 +1,30 @@
+//main: ../style.less
+.contacts {
+    padding-top: 100px;
+}
+
+.contacts__inner {
+    display: flex;
+    border-bottom: 1px solid fade(@black, 20);    
+
+    padding: 30px;
+    display: center;
+    &:hover {
+        border: 1px fade(@black, 15) solid;
+        border-radius: 10px;
+    }
+}
+
+.contacts__photo {
+    width: 50%;
+}
+
+.contacts__info {
+    width: 50%;
+}
+
+.contacts__header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}

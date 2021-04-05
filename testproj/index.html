@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин антиквариата</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <div class="logo__img">
+                    <img src="img/png-clipart-coin-gold-sovereign-baldwin-s-of-st-james-s-numismatics-old-british-coins.png" width="57px" alt="">
+                </div>
+                <div class="logo__info">
+                    <div class="logo__name">
+                        Магазин антиквариата "Монета"
+                    </div>
+                    <div class="logo__adress">
+                        Ул. Чигорина, 67
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav__link" href="#goods">Экспонаты</a>
+                <a class="nav__link" href="#about">Информация</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
+            </nav>
+
+            <div class="menu">
+                <img class="menu__icon" src="img/menu.png" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="presentation">
+    <div class="container">
+        <div class="presentation__inner">
+            <div class="presentation__content">
+                <h1 class="presentation__subtitle">Добро пожаловать в</h1>
+                <h2 class="presentation__title">Антикварный магазин "Монета"</h2>
+                <a class="btn" href="#goods">Экспонаты</a>
+            </div>
+            <div class="presentation_img">
+                <img  class="presentation_photo" src="img/coins.png" width="400px" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__photo">
+                <img src="img/about_img.png" alt="" class="about__img">
+            </div>
+            <div class="about__info">
+                <h3 class="about__title">Антикварный Магазин</h3>
+                <h2 class="about__bigtitle">Монета</h2>
+                <div class="about__text">Наш магазин "Монета" предлагает широкий спектр антикварного товара, который обладает истоками с разных уголков мира. Мы работаем на рынке антиквариата уже 10 лет, и предоставляем надежность наших услуг и подлинность нашего товара. Мы специализируемся на антикварных монетах, мраморных издельях, а также мы предлагаем антикварную мебель. На нашем сайте Вы можете просмотреть товары и купить их в нашем магазине. Мы постоянно обновляем наш ассортимент, поэтому некототрые товары могут быть не указаны на сайте.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="antiques">
+    <div class="container">
+        <div class="antiques__nav">
+            <a href="" class="antiques__nav-link" data-filter="all">Все</a>
+            <a href="" class="antiques__nav-link" data-filter="coin">Монеты</a>
+            <a href="" class="antiques__nav-link" data-filter="furniture">Мебель</a>
+            <a href="" class="antiques__nav-link" data-filter="marble">Мрамор</a>
+        </div>
+
+        <div class="goods" id="goods">
+            <div class="goods__col" data-cat="furniture">
+                <div class="goods__item" data-modal="#antique_1">
+                    <div class="goods__item-img">
+                        <img src="img/globus.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Глобус</div>
+                        <div class="goods__item-price">1000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="furniture">
+                <div class="goods__item" data-modal="#antique_2">
+                    <div class="goods__item-img">
+                        <img src="img/globus_table.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Стол-глобус</div>
+                        <div class="goods__item-price">1200 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="furniture">
+                <div class="goods__item"  data-modal="#antique_3">
+                    <div class="goods__item-img">
+                        <img src="img/table.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Стол античный</div>
+                        <div class="goods__item-price">800 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="furniture">
+                <div class="goods__item"  data-modal="#antique_4">
+                    <div class="goods__item-img">
+                        <img src="img/chairs.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Стулья</div>
+                        <div class="goods__item-price">1300 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="furniture">
+                <div class="goods__item" data-modal="#antique_5">
+                    <div class="goods__item-img">
+                        <img src="img/sofa.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Диван</div>
+                        <div class="goods__item-price">3000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="furniture">
+                <div class="goods__item" data-modal="#antique_6">
+                    <div class="goods__item-img">
+                        <img src="img/chessboard.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Шахматный стол</div>
+                        <div class="goods__item-price">1000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="marble">
+                <div class="goods__item" data-modal="#antique_7" >
+                    <div class="goods__item-img">
+                        <img src="img/marble_cat.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Мраморная статуя</div>
+                        <div class="goods__item-price">10000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="marble">
+                <div class="goods__item" data-modal="#antique_8">
+                    <div class="goods__item-img">
+                        <img src="img/marble_statue1.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Мраморня статуя</div>
+                        <div class="goods__item-price">5000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="marble">
+                <div class="goods__item" data-modal="#antique_9">
+                    <div class="goods__item-img">
+                        <img src="img/marble_vase.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Мраморная ваза</div>
+                        <div class="goods__item-price">3000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="marble">
+                <div class="goods__item" data-modal="#antique_10">
+                    <div class="goods__item-img">
+                        <img src="img/marble_statue2.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Мраморная статуя</div>
+                        <div class="goods__item-price">10000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="coin">
+                <div class="goods__item" data-modal="#antique_11">
+                    <div class="goods__item-img">
+                        <img src="img/roman_coin.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Римская монета</div>
+                        <div class="goods__item-price">6000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="coin">
+                <div class="goods__item" data-modal="#antique_12">
+                    <div class="goods__item-img">
+                        <img src="img/greek_coin.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Греческая монета</div>
+                        <div class="goods__item-price">30000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="coin">
+                <div class="goods__item" data-modal="#antique_13">
+                    <div class="goods__item-img">
+                        <img src="img/greek_coin2.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Греческая монета</div>
+                        <div class="goods__item-price">10000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="coin">
+                <div class="goods__item" data-modal="#antique_14">
+                    <div class="goods__item-img">
+                        <img src="img/chinease_coin.webp" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Китайская монета</div>
+                        <div class="goods__item-price">40000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="coin">
+                <div class="goods__item" data-modal="#antique_15">
+                    <div class="goods__item-img">
+                        <img src="img/indian_coin.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Индийская монета</div>
+                        <div class="goods__item-price">25000 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods__col" data-cat="coin">
+                <div class="goods__item" data-modal="#antique_16">
+                    <div class="goods__item-img">
+                        <img src="img/indian_coin2.jpg" alt="" class="goods__item-photo">
+                    </div>
+                    <div class="goods__item-info">
+                        <div class="goods__item-description">Индийская монета</div>
+                        <div class="goods__item-price">6100 грн</div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__inner">
+            <div class="contacts__info">
+                <div class="contacts__header">Контакты</div>
+                <div class="contacts__content">
+                Электронная почта - example.@mail.com<br>
+                Номер телефона - +380977777777<br>
+                Адрес - Киев, Ул. Чигорина, 67<br>
+                </div>
+            </div>
+            <img src="img/phone.png" alt="" class="contacts__photo">
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copyright">
+                &copy; 2021 
+            </div>
+            <nav class="footer__nav">
+                <a href="#goods" class="footer__nav-link">Экспонаты</a>
+                <a href="#about" class="footer__nav-link">Информация</a>
+                <a href="#contacts" class="footer__nav-link">Контакты</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<div class="modal" id="antique_1">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close"  data-close>
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/globus.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Глобус</h3>
+                </div>
+                <div class="modal__review--text">Советский глобус, деревянный, 1940 г. В отличном состоянии.</div>
+                <div class="modal__review--price">Цена:1000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_2">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/globus_table.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Стол-глобус</h3>
+                </div>
+                <div class="modal__review--text">Советский, деревянный стол со стилизацией под глобус, 1956 г. Глянцевая поверхность, имеет царапины на поверхности</div>
+                <div class="modal__review--price">Цена:1200 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_3">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/table.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Стол античный</h3>
+                </div>
+                <div class="modal__review--text">Стол эпохи Российской империи, 1910-х гг. Изношеный, подлежит реставрации.</div>
+                <div class="modal__review--price">Цена: 800 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_4">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/chairs.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Стулья</h3>
+                </div>
+                <div class="modal__review--text">Французские стулья 19 века, в отличном состоянии, деревянные с тканевой обивкой.</div>
+                <div class="modal__review--price">Цена: 1300 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_5">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/sofa.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Диван</h3>
+                </div>
+                <div class="modal__review--text">Деревянный диван с тканевой обивкой 1930-х гг. В хорошем состоянии, царапина на левой передней ножке</div>
+                <div class="modal__review--price">Цена:3000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_6">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/chessboard.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Шахматный стол</h3>
+                </div>
+                <div class="modal__review--text">Советский шахматный стол. Деревянный, в комплект не входят шахматные фигуры. Стол потертый в районе доски, покрыт лаком, с трещенами.</div>
+                <div class="modal__review--price">Цена:1000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_7">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/marble_cat.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Мраморная статуэтка</h3>
+                </div>
+                <div class="modal__review--text">Статуэтка, описывает в мраморе кота, черный цвет, отличное сосотяние. Статуэтка обладает отличной точностью деталей</div>
+                <div class="modal__review--price">Цена:10000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_8">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/marble_statue1.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Мраморная статуэтка</h3>
+                </div>
+                <div class="modal__review--text">Белая мраморня статуэтка 1930-х гг.. Была исполнена бюстом в белом мраморе, описывает молодого человека. В хорошем состоянии.</div>
+                <div class="modal__review--price">Цена:5000 грн.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal"  id="antique_9">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/marble_vase.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Мраморня ваза</h3>
+                </div>
+                <div class="modal__review--text">Датируется 1730 годом. Ваза исполнена в светлых тонах мрамора, имеет трещины, в посредственном состоянии, реставрации не подлежит.</div>
+                <div class="modal__review--price">Цена:3000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_10">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/marble_statue2.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Мраморная статуэтка</h3>
+                </div>
+                <div class="modal__review--text">Мраморная статуэтка 1890-х гг., итальянская, истполнена в белом мраморе. В отличном состоянии.</div>
+                <div class="modal__review--price">Цена: 10000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_11">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/roman_coin.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Римская монета</h3>
+                </div>
+                <div class="modal__review--text">Монета времен Римской Империи, в посредственном состоянии, подлежит реставрации.</div>
+                <div class="modal__review--price">Цена:6000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_12">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/greek_coin.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Греческая монета</h3>
+                </div>
+                <div class="modal__review--text">Монета времен античной Греции, исполнена в железе, в хорошем состоянии.</div>
+                <div class="modal__review--price">Цена:30000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_13">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/greek_coin2.jpg" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Греческая монета</h3>
+                </div>
+                <div class="modal__review--text">Греческая монета, в посредственном состоянии, скошены ребра, реставрации не подлежит.</div>
+                <div class="modal__review--price">Цена:10000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_14">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/chinease_coin.webp" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Китайская монета</h3>
+                </div>
+                <div class="modal__review--text">Монета времен династии Мин, в идеальном состоянии, исполнена в железе.</div>
+                <div class="modal__review--price">Цена:40000 грн.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_15">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/coins.png" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Индийская монета</h3>
+                </div>
+                <div class="modal__review--text">Индийская монета в золоте, 16 века, в хорошем состоянии, химически обработана.</div>
+                <div class="modal__review--price">Цена:25000 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="antique_16">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close="">
+            <img src="img/close_button.png" width="35px" alt="">
+        </button>
+
+        <div class="modal__review">
+            <div class="modal__info-photo">
+                <img src="img/coins.png" alt="" class="modal__review-img">
+            </div>
+            <div class="modal__review--info">
+                <div class="modal__review-header">
+                    <h3 class="modal__review--title">Индийская монета</h3>
+                </div>
+                <div class="modal__review--text">Золотая индийская монета, в отличном состоянии, 20 века, было отчеканено ограниченое количество данных экземпляров.</div>
+                <div class="modal__review--price">Цена:6100 грн</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
